@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9F7B065-EA17-027B-ABB5-91475F04CB24" name="T_DIS_ENROLL">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>86DB4519-2FBF-E221-326E-03BF4CCFFA4D</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_course_enroll" id="03E88583-CB59-F294-C9EB-48424D337F29">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>0F9309A6-7F62-2171-EF69-6A5084822914</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE87E7E-7EAF-E8A9-ECEB-EEF6A8380015" referredColumn="34B4682E-A4C1-6BA3-8658-8F08864B5C00"/>
+</associations>
+</Column>
+<Column name="id_dis_enroll" id="F15027DE-4E67-6E59-28C5-7540976882E0">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>E868498B-F2AA-085B-E1B1-A9906ED89357</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_avg" id="71B24663-AB98-095C-3175-3D6A9C59D5F6">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>111AAA75-6429-E517-AC97-1AB812012F69</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="second_avg" id="832DB5BD-0FA1-49FE-4159-CBCEBE7788EF">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>8E956CF8-A0E2-8C38-D9FD-3013229A2E83</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="final_avg" id="CFC10751-B006-57C3-2AB3-57BA531C3193">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>B5F7689A-63EB-6EC1-1897-639D49269EC5</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="396B6750-067A-444A-723D-0C3626FFCC69">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>698C8B88-E5F6-CEBC-B265-F4B9836DF585</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_discipline" id="C9FDF451-7AAB-5189-2C1B-10B01308CE13">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>641AC829-74D4-EDA6-5C79-9B711C5E0182</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="351B5916-4BFF-E7E3-865A-1CCAFFAE81D3" referredColumn="DA4A9039-ECB2-92F3-4168-0CD5656F5B2F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="922B8DAB-089E-86C6-38A4-CA07C062E943" name="T_DIS_ENROLL_PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>BB09CDFD-E41E-55E0-4D86-65E9B053F7B0</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F15027DE-4E67-6E59-28C5-7540976882E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBBC144A-1AA1-B868-9827-3D36451338A2" name="T_DIS_ENROLL_T_COURSE_FK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>5C8B6CA4-A661-E958-021D-5CE403E63A91</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E88583-CB59-F294-C9EB-48424D337F29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A56F5D4-D4A1-C246-09B9-F04B84792793" name="T_DIS_ENROLL_T_DISCIPLINE_FK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>0E882B88-E3C7-6A2A-3610-CA38C2B4DCBE</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9FDF451-7AAB-5189-2C1B-10B01308CE13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DIS_ENROLL_FINAL_AVG_CK" directorySegmentName="seg_0" id="B2509C4D-993C-EA6E-23A2-CA17CAF5DCB3">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 12:17:39 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<rule><![CDATA[final_avg = (first_avg + second_avg) / 2]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

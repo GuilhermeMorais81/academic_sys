@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECE40351-EFBB-4BBA-9BD7-13D97B06F50C" name="T_COURSE">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:14:54 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_course" id="1087CAEF-D477-51DF-4785-0C5342845192">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:15:11 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_course" id="984DCF8F-3FB6-F1A6-5709-75D8ED752E4A">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:15:35 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>160 CHAR</dataTypeSize>
+<ownDataTypeParameters>160 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2F8A77B4-FCB3-FFD9-C948-8C4DA2AC09FE" name="T_COURSE PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:15:33 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1087CAEF-D477-51DF-4785-0C5342845192</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

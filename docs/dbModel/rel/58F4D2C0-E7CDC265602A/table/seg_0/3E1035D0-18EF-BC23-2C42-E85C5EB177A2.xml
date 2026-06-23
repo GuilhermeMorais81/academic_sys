@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E1035D0-18EF-BC23-2C42-E85C5EB177A2" name="T_COURSE">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>ECE40351-EFBB-4BBA-9BD7-13D97B06F50C</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_course" id="1B04A1DD-28C8-F7F5-8733-FA4E4DB39089">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>1087CAEF-D477-51DF-4785-0C5342845192</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_course" id="AE776F7D-12E9-A7FE-5F48-9528F96EC73E">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>984DCF8F-3FB6-F1A6-5709-75D8ED752E4A</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>160 CHAR</dataTypeSize>
+<ownDataTypeParameters>160 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDBC45DA-9089-9C33-84C5-87749E3EDCD7" name="T_COURSE_PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>2F8A77B4-FCB3-FFD9-C948-8C4DA2AC09FE</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B04A1DD-28C8-F7F5-8733-FA4E4DB39089"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE050D74-23A0-FB5E-58E0-0880A7D23677" name="COURSE_NAME__UN">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 12:15:31 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE776F7D-12E9-A7FE-5F48-9528F96EC73E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

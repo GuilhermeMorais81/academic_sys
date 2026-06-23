@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F120DCC-6AE0-D4DD-CF2C-5C839ABB21DD" name="T_STUDENT">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>E4FAC78A-9922-0C59-48A7-21149B72F465</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_student" id="62EE2107-1CB6-6006-4C43-D3D4DEE8A810">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>E42F5EB1-DECB-40C6-C92A-A4AA146A587B</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_student" id="D3E53E08-5284-F9C5-5826-22051087BA02">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>1C887FE0-2432-949E-B0B0-4D7E72F3CABC</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_birth" id="30FD3B8B-7087-90A1-0672-0B5BC5E3578C">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>4DE74DFC-2CAC-3A20-29EA-0A2DF7F107BE</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SSN" id="7E792ADE-CDB1-1BD5-CCFF-172B6D4D8449">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>1733A8B3-0E24-D6A1-4AB0-6478ECB15A60</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93679338-42D2-6D51-7CB8-B352C2021CBC" name="T_STUDENT_PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>E7FF6AD6-5634-1A32-1475-B0463E2B5FD9</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62EE2107-1CB6-6006-4C43-D3D4DEE8A810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B63D240-EC62-A605-540E-F1AD4DDAB216" name="STUDENT_NAME__UN">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 12:14:34 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3E53E08-5284-F9C5-5826-22051087BA02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD4C515B-DE4F-4179-CDD8-A6B1E969DBFE" name="STUDENT_SSN__UN">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 12:15:05 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E792ADE-CDB1-1BD5-CCFF-172B6D4D8449"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DB039D2-AE80-E427-BD85-1D4CC45BEF60" name="T_COURSE_ENROLL">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:20:16 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_course" id="8C1250D6-D6E5-AEA0-B66D-81B4DE50EE1F">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:24:11 UTC</createdTime>
+<generatorID>BB4A15D8-030D-D9D1-9B5B-09989462A65F</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<referedAttribute>1087CAEF-D477-51DF-4785-0C5342845192</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_student" id="DB166A42-A6E4-087A-707B-53AF387A477D">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:22:28 UTC</createdTime>
+<generatorID>C305EFFD-603B-5312-6305-99754CC793D8</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<referedAttribute>E42F5EB1-DECB-40C6-C92A-A4AA146A587B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_course_enroll" id="C77B0C7B-70FA-BB3F-1C97-44265958D912">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:20:33 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_creation" id="4D9141F9-2188-15E6-F95D-363CBFDA7F3A">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:20:55 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="68780143-1D9D-9080-0A70-FFB07C993E4C">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:28:02 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="437BF3ED-0092-ED0E-1C83-14EA03B2F66B" name="T_COURSE_ENROLL PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 01:20:54 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<engineerTo>
+<item key="58F4D2C0-E4B7-FC67-E23A-E7CDC265602A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C77B0C7B-70FA-BB3F-1C97-44265958D912</newElementsIDs>
+<usedAttributes>
+<attributeRef>C77B0C7B-70FA-BB3F-1C97-44265958D912</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

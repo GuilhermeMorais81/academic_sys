@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87E64007-8A06-44EF-B20F-284DCB3AA19A" name="T_DISCIPLINE">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>8C373083-FCC8-65A0-E371-E4EF17D30079</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_course" id="ADEF6D86-19F3-42F1-379E-5DDC477AAA7D">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>66F6FE8B-E27C-7D60-84EB-EB4E447B23B6</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E3EA44B-DB1A-BA36-75EA-04D0497B07C8" referredColumn="1B04A1DD-28C8-F7F5-8733-FA4E4DB39089"/>
+</associations>
+</Column>
+<Column name="id_discipline" id="DA4A9039-ECB2-92F3-4168-0CD5656F5B2F">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>85C2C601-61A2-1EF7-ADB1-393DBFFEE7BE</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_discipline" id="5B9670A7-E638-421C-AB2A-39B4E11A696F">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>56E71575-E82A-9507-114F-DA2E13CC1296</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>160 CHAR</dataTypeSize>
+<ownDataTypeParameters>160 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1931412B-BC90-3F30-B602-F5E49B7C738E" name="T_DISCIPLINE_PK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>99EEA202-B884-A8FF-BECC-ABF998BB0E3F</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA4A9039-ECB2-92F3-4168-0CD5656F5B2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EDBE0A9-7FEA-2B0C-DF7D-EA9C3DAE1129" name="T_DISCIPLINE_T_COURSE_FK">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 11:55:21 UTC</createdTime>
+<generatorID>0C759899-FF1B-0B9C-889C-4DA08ACB94CF</generatorID>
+<ownerDesignName>dbModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADEF6D86-19F3-42F1-379E-5DDC477AAA7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

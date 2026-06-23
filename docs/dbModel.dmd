@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="dbModel" id="9001304E-ADBC-EED8-9E9B-940E3FFD4B4C" version="3.5">
+<createdBy>guiri</createdBy>
+<createdTime>2026-06-21 00:45:13 UTC</createdTime>
+<ownerDesignName>dbModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9001304E-ADBC-EED8-9E9B-940E3FFD4B4C</designId>
+</OSDM_Design>
