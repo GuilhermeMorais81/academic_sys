@@ -2,6 +2,7 @@ package database;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.UUID;
 
 import model.Student;
 
@@ -37,6 +38,19 @@ public class StudentDAO {
         try(var connection = ConnectionFactory.getConnection();
         PreparedStatement ps = connection.prepareStatement(sql)) {
             ps.setString(1, SSN);
+            try(ResultSet rs = ps.executeQuery()) {
+                if(rs.next()) return mapResultSetToStudent(rs);
+            }
+        }
+        return null;
+    }
+
+    public static Student query(UUID id) throws Exception {
+        String sql = "SELECT * FROM t_student WHERE id_student = ?";
+
+        try(var connection = ConnectionFactory.getConnection();
+        PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setObject(1, id);
             try(ResultSet rs = ps.executeQuery()) {
                 if(rs.next()) return mapResultSetToStudent(rs);
             }
