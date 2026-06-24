@@ -1,18 +1,25 @@
 package model.enums;
 
 public enum CourseEnrollmentStatus {
-    IN_COURSE(0),
-    APPROVED(1),
-    NOT_APPROVED(2),
-    WITHDRAWN(3);
+    IN_COURSE((short) 0),
+    APPROVED((short) 1),
+    NOT_APPROVED((short) 2),
+    WITHDRAWN((short) 3);
 
-    private final int number;
+    private final short number;
 
-    CourseEnrollmentStatus(int number) {
+    CourseEnrollmentStatus(short number) {
         this.number = number;
     }
 
-    public int getNumber() {
+    public static CourseEnrollmentStatus parseNumberToStatus(short number) {
+        for(CourseEnrollmentStatus ces : values()) {
+            if(ces.number == number) return ces;
+        }
+        throw new IllegalArgumentException("Invalid status number");
+    } 
+
+    public short getNumber() {
         return number;
     }
 }

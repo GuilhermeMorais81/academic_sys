@@ -1,17 +1,17 @@
 package model.enums;
 
 public enum DisciplineEnrollmentStatus {
-    IN_COURSE(0),
-    APPROVED(1),
-    NOT_APPROVED(2);
+    IN_COURSE((short) 0),
+    APPROVED((short) 1),
+    NOT_APPROVED((short) 2);
 
-    private final int number;
+    private final short number;
 
-    DisciplineEnrollmentStatus(int number) {
+    DisciplineEnrollmentStatus(short number) {
         this.number = number;
     }
 
-    public int getNumber() {
+    public short getNumber() {
         return number;
     }
 }

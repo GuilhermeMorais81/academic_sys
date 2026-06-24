@@ -20,4 +20,8 @@ public class UImessage {
         sb.append("\nSelect one of the options above:\n");
         return sb.toString();
     }
+
+    public static String enrollmentSucess(String student, String course) {
+        return student + " Was sucessfully enrolled in " + course;
+    }
 }
