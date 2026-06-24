@@ -17,6 +17,14 @@ public class StudentInfoInput {
         }
     }
 
+    public static String receiveUniqueSSN() throws Exception {
+        while(true) {
+            String input = receiveSSN();
+            if(StudentDAO.query(input) == null) return input;
+            else JOptionPane.showMessageDialog(null, UImessage.errorMessage("SSN already registered"));
+        }
+    }
+
     public static LocalDate receiveBirthDate() {
         while(true) {
             String option = JOptionPane.showInputDialog(UImessage.askInput("Student's Birth Date"));

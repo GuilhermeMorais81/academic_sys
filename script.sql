@@ -85,3 +85,21 @@ ALTER TABLE T_DISCIPLINE
     REFERENCES T_COURSE (id_course) 
     ON DELETE NO ACTION 
     ON UPDATE NO ACTION;
+
+ALTER TABLE t_course_enroll
+ADD CONSTRAINT UQ_STUDENT_COURSE UNIQUE(id_course, id_student);
+
+
+/* CREATE OR ALTER VIEW VW_DISCIPLINE_ENROLL AS
+SELECT
+    t_student.nm_student,
+    t_student.dt_birth,
+    t_course.nm_course,
+    t_discipline.nm_discipline,
+    t_course_enroll.dt_creation
+FROM 
+    t_course_enroll
+    INNER JOIN t_student ON t_course_enroll.id_student = t_student.id_student
+    INNER JOIN t_course ON t_course_enroll.id_course = t_course.id_course
+    INNER JOIN t_dis_enroll ON t_course_enroll.id_course_enroll = t_dis_enroll.id_course_enroll
+    INNER JOIN t_discipline ON t_dis_enroll.id_discipline = t_discipline.id_discipline; */

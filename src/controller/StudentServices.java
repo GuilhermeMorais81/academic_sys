@@ -19,8 +19,8 @@ public class StudentServices {
     public static void addStudent() {
         String name = UniversalInfoInput.receiveName(UImessage.askInput("student's name"));
         LocalDate birthDate = StudentInfoInput.receiveBirthDate();
-        String SSN = StudentInfoInput.receiveSSN();
         try {
+            String SSN = StudentInfoInput.receiveUniqueSSN();
             StudentDAO.save(new Student(UUID.randomUUID(), name, birthDate, SSN));
             JOptionPane.showMessageDialog(null, name + " was successfully added.");
         }
