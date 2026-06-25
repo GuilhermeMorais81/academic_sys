@@ -15,9 +15,9 @@ public class DisciplineEnrollmentDAO {
         (
             rs.getObject("id_dis_enroll", java.util.UUID.class), 
             DisciplineDAO.query(rs.getObject("id_discipline", java.util.UUID.class)), 
-            null, 
-            null, 
-            null, 
+            TypeConverter.parseBigDecToDouble(rs.getBigDecimal("first_avg")), 
+            TypeConverter.parseBigDecToDouble(rs.getBigDecimal("second_avg")), 
+            TypeConverter.parseBigDecToDouble(rs.getBigDecimal("final_avg")), 
             DisciplineEnrollmentStatus.parseNumberToStatus(rs.getShort("status"))
         );
     }

@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import database.CourseEnrollmentDAO;
 import model.DisciplineEnrollment;
 import view.output.UImessage;
+import view.output.EnrollmentOutputHandler;
 import view.output.ErrorHandler;
 import view.input.CourseInfoInput;
 import view.input.DisciplineEnrollInfoInput;
@@ -46,5 +47,18 @@ public class EnrollmentServices {
         }
     }
 
-    
+    public static void generateEnrollmentReport() {
+        try {
+            var student = StudentInfoInput.receiveStudentBySSN();
+            var course = CourseInfoInput.receiveCourseByName();
+            var courseEnrollment = CourseEnrollmentDAO.query(student, course);
+            if(courseEnrollment != null) 
+                JOptionPane.showMessageDialog(null, EnrollmentOutputHandler.generateCourseEnrollReport(courseEnrollment, course));
+            else 
+                JOptionPane.showMessageDialog(null, "Enrollment not found");
+        }
+        catch(Exception e) {
+            ErrorHandler.showError(e);
+        }
+    }
 }

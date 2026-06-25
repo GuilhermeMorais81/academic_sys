@@ -32,6 +32,10 @@ public class DisciplineEnrollment extends Base {
         setNewStatus();
     }
 
+    public boolean isAverageAlreadySet() {
+        return status != DisciplineEnrollmentStatus.IN_COURSE;
+    }
+
     private void setNewStatus() {
         if(firstAvg == null || finalAvg == null) throw new IllegalStateException("averages were not set");
         if(finalAvg >= 6) status = DisciplineEnrollmentStatus.APPROVED;
