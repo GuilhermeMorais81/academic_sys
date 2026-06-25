@@ -21,7 +21,7 @@ public class CourseServices {
             int numDisciplines = UniversalInfoInput.receiveNumber(UImessage.askInput("number of disciplines of the course"));
             for(int i = 0; i < numDisciplines; i++) disciplines.add(DisciplineServices.addDiscipline());
             CourseDAO.save(new Course(UUID.randomUUID(), name, disciplines));
-            JOptionPane.showMessageDialog(null, name + "course was successfully added.");
+            JOptionPane.showMessageDialog(null, name + " course was successfully added.");
         }
         catch(Exception e) {
             ErrorHandler.showError(e);
