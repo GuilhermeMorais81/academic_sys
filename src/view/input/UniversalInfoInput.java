@@ -1,8 +1,9 @@
-package view;
+package view.input;
 
 import javax.swing.JOptionPane;
 
 import controller.validators.UniversalValidators;
+import view.output.UImessage;
 
 public class UniversalInfoInput {
 

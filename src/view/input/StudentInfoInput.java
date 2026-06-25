@@ -1,4 +1,4 @@
-package view;
+package view.input;
 
 import java.time.LocalDate;
 
@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 import controller.validators.StudentValidators;
 import database.StudentDAO;
 import model.Student;
+import view.output.UImessage;
 
 public class StudentInfoInput {
     public static String receiveSSN() {

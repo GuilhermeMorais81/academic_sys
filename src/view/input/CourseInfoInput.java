@@ -1,9 +1,10 @@
-package view;
+package view.input;
 
 import javax.swing.JOptionPane;
 
 import database.CourseDAO;
 import model.Course;
+import view.output.UImessage;
 
 public class CourseInfoInput {
     public static Course receiveCourseByName() throws Exception {
