@@ -25,5 +25,16 @@ public class DisciplineEnrollment extends Base {
         this.status = status;
     }
 
-    
+    public void calculateFinalAvg(Double first, Double second) {
+        firstAvg = first;
+        secondAvg = second;
+        finalAvg = (firstAvg + secondAvg) / 2;
+        setNewStatus();
+    }
+
+    private void setNewStatus() {
+        if(firstAvg == null || finalAvg == null) throw new IllegalStateException("averages were not set");
+        if(finalAvg >= 6) status = DisciplineEnrollmentStatus.APPROVED;
+        else status = DisciplineEnrollmentStatus.NOT_APPROVED;
+    }
 }

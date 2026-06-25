@@ -33,10 +33,10 @@ public class StudentServices {
         try {
             var student = StudentInfoInput.receiveStudentBySSN();
             var course = CourseInfoInput.receiveCourseByName();
-            if(!CourseEnrollmentDAO.query(student, course)) {
+            if(!CourseEnrollmentDAO.studentIsAlreadyEnrolled(student, course)) {
                 var courseEnrollment = new CourseEnrollment(
                     UUID.randomUUID(), 
-                    course, 
+                    course.getId(), 
                     student,
                     LocalDate.now(), 
                     CourseEnrollmentStatus.IN_COURSE

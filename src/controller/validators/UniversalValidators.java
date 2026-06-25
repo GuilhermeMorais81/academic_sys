@@ -29,9 +29,9 @@ public class UniversalValidators {
         }
     }
 
-    public static boolean isValidNumber(String input, double min, double max) {
+    public static boolean isValidNumber(String input, Double min, Double max) {
         try {
-            double parsed = Double.parseDouble(input);
+            Double parsed = Double.parseDouble(input);
             return parsed >= min && parsed <= max;
         }
         catch(NumberFormatException e) {

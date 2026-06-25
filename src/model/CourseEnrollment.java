@@ -1,50 +1,49 @@
 package model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 import lombok.Getter;
+import lombok.Setter;
 import model.enums.CourseEnrollmentStatus;
 import model.enums.DisciplineEnrollmentStatus;
 
 @Getter
 public class CourseEnrollment extends Base {
-    private Course course;
+    private UUID courseId;
     private Student student;
-    private List<DisciplineEnrollment> disciplineEnrollments;
+    private @Setter List<DisciplineEnrollment> disciplineEnrollments;
     private LocalDate creationDate;
     private CourseEnrollmentStatus status;
 
-    public CourseEnrollment(UUID id, Course course, Student student, LocalDate creationDate, CourseEnrollmentStatus status) {
+    public CourseEnrollment(UUID id, UUID courseId, Student student, LocalDate creationDate, CourseEnrollmentStatus status) {
         super(id);
-        this.course = course;
+        this.courseId = courseId;
         this.student = student;
-        setNewDisciplineEnrollments();
-        if(disciplineEnrollments == null) System.out.println(disciplineEnrollments);
         this.creationDate = creationDate;
         this.status = status;
     }
 
-    private void setNewDisciplineEnrollments() {
-        disciplineEnrollments = new ArrayList<>();
-        for(Discipline discipline : course.getDisciplines()) {
-            var disciplineEnrollment = new DisciplineEnrollment
-            (
-                UUID.randomUUID(),
-                discipline, 
-                null, 
-                null, 
-                null, 
-                DisciplineEnrollmentStatus.IN_COURSE
-            );
-            disciplineEnrollments.add(disciplineEnrollment);
-        }
+    public boolean isAverageAlreadySet() {
+        return status.getNumber() != DisciplineEnrollmentStatus.IN_COURSE.getNumber(); 
     }
 
-    @Override
-    public String toString() {
-        return course.getName() + " | " + student.getName() + creationDate + getStatus();
+    private boolean isDisciplineEnrollmentsDefined() {
+        for(DisciplineEnrollment des : disciplineEnrollments) {
+            if(des.getStatus() == DisciplineEnrollmentStatus.IN_COURSE) return false;
+        }
+        return true;
+    }
+
+    public void setNewStatus() {
+        if(!isDisciplineEnrollmentsDefined()) throw new IllegalStateException("Discipline Enrollments were not defined");
+        for(DisciplineEnrollment des : disciplineEnrollments) {
+            if(des.getStatus() == DisciplineEnrollmentStatus.NOT_APPROVED) {
+                status = CourseEnrollmentStatus.NOT_APPROVED;
+                return;
+            }
+        }
+        status = CourseEnrollmentStatus.APPROVED;
     }
 }

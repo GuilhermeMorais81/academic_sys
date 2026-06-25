@@ -4,6 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import model.Course;
 import model.Discipline;
@@ -11,7 +12,11 @@ import model.Discipline;
 public class DisciplineDAO {
 
     public static Discipline mapResultSetToDiscipline(ResultSet rs) throws Exception {
-        var discipline = new Discipline(rs.getObject("id_discipline", java.util.UUID.class));
+        var discipline = new Discipline
+        (
+            rs.getObject("id_discipline", java.util.UUID.class),
+            rs.getString("nm_discipline")
+        );
         return discipline;
     }
 
@@ -34,7 +39,7 @@ public class DisciplineDAO {
 
     public static List<Discipline> query(Course course) throws Exception {
         var disciplines = new ArrayList<Discipline>();
-        String sql = "SELECT id_discipline FROM t_discipline WHERE id_course = ?";
+        String sql = "SELECT * FROM t_discipline WHERE id_course = ?";
         try(var connection = ConnectionFactory.getConnection();
         var ps = connection.prepareStatement(sql)) {
             ps.setObject(1, course.getId());
@@ -45,5 +50,18 @@ public class DisciplineDAO {
                 return disciplines;
             }
         }
+    }
+
+    public static Discipline query(UUID id) throws Exception {
+        String sql = "SELECT * FROM t_discipline WHERE id_discipline = ?";
+        
+        try(var connection = ConnectionFactory.getConnection();
+        PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setObject(1, id);
+            try(ResultSet rs = ps.executeQuery()) {
+                if(rs.next()) return mapResultSetToDiscipline(rs);
+            }
+        }
+        return null;
     }
 }

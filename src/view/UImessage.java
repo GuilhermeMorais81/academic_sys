@@ -24,4 +24,8 @@ public class UImessage {
     public static String enrollmentSucess(String student, String course) {
         return student + " Was sucessfully enrolled in " + course;
     }
+
+    public static String askDisciplineEnrollAvg(String discipline, String avgType) {
+        return "Discipline: " + discipline + "\nEnter the " + avgType + " average";
+    }
 }

@@ -11,6 +11,13 @@ public enum DisciplineEnrollmentStatus {
         this.number = number;
     }
 
+    public static DisciplineEnrollmentStatus parseNumberToStatus(short number) {
+        for(DisciplineEnrollmentStatus des : values()) {
+            if(des.number == number) return des;
+        }
+        throw new IllegalArgumentException("Invalid status number");
+    }
+
     public short getNumber() {
         return number;
     }

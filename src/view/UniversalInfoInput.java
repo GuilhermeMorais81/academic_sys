@@ -7,7 +7,7 @@ import controller.validators.UniversalValidators;
 public class UniversalInfoInput {
 
     public static int chooseMainMenuOption() {
-        String[] options = {"Add students", "Add Courses", "Enroll Students", "Exit"};
+        String[] options = {"Add students", "Add Courses", "Enroll Students", "Set enrollment averages", "Exit"};
 
         while(true) {
             String option = JOptionPane.showInputDialog(UImessage.menuMessage(options));
