@@ -8,10 +8,10 @@ import javax.swing.JOptionPane;
 import database.CourseDAO;
 import model.Course;
 import model.Discipline;
-import view.CourseInfoInput;
-import view.ErrorHandler;
-import view.UImessage;
-import view.UniversalInfoInput;
+import view.input.CourseInfoInput;
+import view.input.UniversalInfoInput;
+import view.output.ErrorHandler;
+import view.output.UImessage;
 
 public class CourseServices {
     public static void addCourses() {

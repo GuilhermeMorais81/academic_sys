@@ -4,13 +4,14 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+
 import database.CourseEnrollmentDAO;
 import model.DisciplineEnrollment;
-import view.CourseInfoInput;
-import view.DisciplineEnrollInfoInput;
-import view.ErrorHandler;
-import view.StudentInfoInput;
-import view.UImessage;
+import view.output.UImessage;
+import view.output.ErrorHandler;
+import view.input.CourseInfoInput;
+import view.input.DisciplineEnrollInfoInput;
+import view.input.StudentInfoInput;
 
 public class EnrollmentServices {
     public static void setEnrollmentAverages() {
@@ -44,4 +45,6 @@ public class EnrollmentServices {
             de.calculateFinalAvg(firstAvg, secondAvg);
         }
     }
+
+    
 }

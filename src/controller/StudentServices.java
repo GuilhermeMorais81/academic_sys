@@ -9,11 +9,11 @@ import database.StudentDAO;
 import model.CourseEnrollment;
 import model.Student;
 import model.enums.CourseEnrollmentStatus;
-import view.CourseInfoInput;
-import view.ErrorHandler;
-import view.StudentInfoInput;
-import view.UImessage;
-import view.UniversalInfoInput;
+import view.output.UImessage;
+import view.output.ErrorHandler;
+import view.input.CourseInfoInput;
+import view.input.StudentInfoInput;
+import view.input.UniversalInfoInput;
 
 public class StudentServices {
     public static void addStudent() {

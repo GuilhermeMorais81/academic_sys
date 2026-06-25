@@ -3,8 +3,8 @@ package controller;
 import java.util.UUID;
 
 import model.Discipline;
-import view.UImessage;
-import view.UniversalInfoInput;
+import view.input.UniversalInfoInput;
+import view.output.UImessage;
 
 public class DisciplineServices {
     public static Discipline addDiscipline() {

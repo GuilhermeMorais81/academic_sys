@@ -1,6 +1,6 @@
 package controller;
 
-import view.UniversalInfoInput;
+import view.input.UniversalInfoInput;
 
 public class UserServices {
     private static final int ADD_STUDENT = 1;
